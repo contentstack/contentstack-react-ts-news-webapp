@@ -1,5 +1,5 @@
 import Contentstack from 'contentstack'
-const Stack = Contentstack.Stack('blt7979d15c28261b93', 'cs17465ae5683299db9d259cb6', 'production')
+const Stack = Contentstack.Stack('<stack_api_key>', '<stack_delivery_toke>', '<environment>')
 
 import React, {Component} from 'react'
 import '../styles/styles.css'

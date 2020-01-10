@@ -1,9 +1,8 @@
-import Contentstack from 'contentstack'
-const Stack = Contentstack.Stack('<stack_api_key>', '<stack_delivery_toke>', '<environment>')
 
 import React, {Component} from 'react'
 import '../styles/styles.css'
-
+import { Link } from 'react-router-dom'
+import { Stack } from '../common/contentstack-api/api'
 
 export default class Home extends Component{
     constructor() {
@@ -30,10 +29,12 @@ export default class Home extends Component{
             post.map((value, index) => {
               return (
               <article className="content-section">
-                 <div className="article-metadata">
-                   <h3 className="article-title">{ value.title }</h3>
-                   <div dangerouslySetInnerHTML={{ __html: value.body} } />
-                 </div>
+                <div className="article-metadata">
+                  <Link to={`/detail/${value.uid}`}>
+                     <h3 className="article-title">{ value.title }</h3>
+                  </Link>
+                  <div dangerouslySetInnerHTML={{ __html: value.body} } />
+                </div>
               </article>
                  )
             })
@@ -42,6 +43,7 @@ export default class Home extends Component{
         </main>
       )
     }
+
   
     render () {
       const {loading, result} = this.state

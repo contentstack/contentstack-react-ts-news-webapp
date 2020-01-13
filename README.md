@@ -21,7 +21,7 @@ We have created an in-depth tutorial on how you can create a React-TS news app u
 
   
 
-[Create a React-TS news app using Contentstack JS SDK](https://www.contentstack.com/docs/example-apps/build-a-react-ts-news-app-using-contentstacks-js-sdk)
+[Create a React-TS news app using Contentstack JS SDK](https://www.contentstack.com/docs/developers/sample-apps/build-a-news-app-using-typescript-react-and-contentstack)
 
 **Documentation**
 
